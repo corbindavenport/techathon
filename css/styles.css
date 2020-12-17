@@ -20,6 +20,12 @@
 }
 
 /* Tablet, desktop, and large desktop */
+@media (min-width: 992px) {
+    .floating-donate-btn {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 600px) {
 
     .container {
@@ -28,6 +34,10 @@
 
     .brand-logo {
         margin-left: 10px;
+    }
+
+    .nav-donate-btn {
+        display: inline-block;
     }
 
 }
@@ -43,6 +53,10 @@
 
     .nav-wrapper .brand-logo img {
         height: 43px;
+    }
+
+    .nav-donate-btn {
+        display: none;
     }
 
 }   
