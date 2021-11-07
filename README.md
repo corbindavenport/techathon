@@ -1,2 +1,2 @@
 # techathon
-Website for Techathon: https://techathon.live
+This is the website for Techathon: https://techathon.live
