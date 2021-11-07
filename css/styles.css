@@ -19,6 +19,10 @@
     margin-bottom: 8px;
 }
 
+.techathon-color {
+    background: #ff634f;
+}
+
 /* Tablet, desktop, and large desktop */
 @media (min-width: 992px) {
     .floating-donate-btn {
