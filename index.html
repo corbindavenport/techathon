@@ -2,192 +2,221 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Techathon</title>
-  <!-- CSS -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/styles.css" type="text/css" rel="stylesheet">
-  <link href="css/fullcalendar.min.css" type="text/css" rel="stylesheet">
-  <!-- Icons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#5cc3fb">
-  <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
-  <meta name="theme-color" content="#5cc3fb">
-  <!-- Description tags -->
-  <meta name="description" content="Techathon is a charity livestream by the tech community set for December 18th, supporting Direct Relief.">
-  <meta name="keywords" content="techathon, tech, livestream, charity, Direct Relief">
-  <meta name="language" content="English">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Techathon: Starting December 18th">
-  <meta name="twitter:site" content="@techathonlive">
-  <meta name="twitter:image" content="http://techathon.live/img/techathon-social.jpg">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Techathon</title>
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#5cc3fb">
+    <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#5cc3fb">
+    <!-- Description tags -->
+    <meta name="description" content="Techathon is a charity livestream by the tech community set for December 18th, supporting Direct Relief.">
+    <meta name="keywords" content="techathon, tech, livestream, charity, Direct Relief">
+    <meta name="language" content="English">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techathon: Starting December 18th">
+    <meta name="twitter:site" content="@techathonlive">
+    <meta name="twitter:image" content="http://techathon.live/img/techathon-social.jpg">
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .techathon {
+            background: #ff412c;
+        }
+
+        .techathon.btn:hover {
+            background: #ff6855;
+        }
+
+        .techathon-yellow {
+            border-color: #ffed71;
+            color: #ffed71;
+        }
+
+        .techathon-yellow:hover {
+            border-color: #000;
+            background: #ffed71;
+            color: #000;
+        }
+
+        .navbar-brand img {
+            height: 32px;
+            margin-top: -8px;
+        }
+
+        #team img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+
+        iframe {
+            border-radius: .3rem !important;
+        }
+
+        /* Fix for anchor links with fixed nav bar */
+        html {
+            scroll-padding-top: 80px;
+        }
+
+    </style>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-
-  <div class="navbar-fixed">
-    <nav class="techathon-color">
-      <div class="nav-wrapper">
-        <span class="brand-logo"><img src="img/techathon-text-logo.png"></span>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#calendar">Schedule</a></li>
-          <li><a href="#about">The Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="/donate/" class="nav-donate-btn" target="_blank">Donate</a></li>
-        </ul>
-      </div>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/techathon-text-logo.png" alt="Techathon logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">The Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="/donate/" target="_blank">
+                    <button type="button" class="btn btn-outline-primary techathon-yellow">Donate</button>
+                </a>
+            </div>
+        </div>
     </nav>
-  </div>
 
-  <!-- Main container -->
+    <!-- Main content -->
 
-  <div class="container">
-
-    <!-- Video + description container -->
-
-    <div class="section">
-      <div class="row">
-        <!-- Video -->
-        <div class="col s12 l8">
-          <div class="card embed-container">
-            <div class="video-container">
-              <iframe src="https://player.twitch.tv/?channel=techathon&parent=techathon.live&autoplay=true" frameborder="0" allowfullscreen></iframe>
+    <div class="container mb-5">
+        <!-- Video/main description -->
+        <div class="row mt-5">
+            <!-- Video -->
+            <div class="col-lg-8 col-md-12 video-container">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://player.twitch.tv/?channel=techathon&parent=techathon.live&autoplay=true" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Description -->
-        <div class="col s12 l4">
-          <div class="row center">
-            <h5 class="header col s12 light">Techathon is a charity livestream by the tech community set for December 18th, supporting <a href="https://www.directrelief.org/" target="_blank">Direct Relief</a>.</h5>
-          </div>
-          <div class="row techathon-main-buttons">
-            <div class="col s12 m6 l12">
-              <a href="https://twitter.com/intent/follow?screen_name=techathonlive" target="_blank" class="btn-large btn-block waves-effect waves-light techathon-color">Follow on Twitter</a>
+            <!-- Buttons -->
+            <div class="col-lg-4 col-md-12 display-6 text-center">
+                <div class="mt-xl-5 mt-lg-3 mt-5">
+                    Techathon is a charity livestream by the tech community, supporting Direct Relief.
+                </div>
             </div>
-            <div class="col s12 m6 l12">
-              <a href="https://www.twitch.tv/techathon" target="_blank" class="btn-large btn-block waves-effect waves-light techathon-color">Follow on Twitch</a>
+        </div>
+        <!-- Buttons -->
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-12 mb-lg-0 mb-3">
+                <a href="https://twitter.com/intent/follow?screen_name=techathonlive" target="_blank">
+                    <button type="button" class="btn techathon btn-lg w-100">Follow on Twitter</button>
+                </a>
             </div>
-          </div>
+            <div class="col-lg-6 col-md-12 mb-lg-0 mb-3">
+                <a href="https://www.twitch.tv/techathon" target="_blank">
+                    <button type="button" class="btn techathon btn-lg w-100">Follow on Twitch</button>
+                </a>
+            </div>
         </div>
-      </div>
+        <!-- Description container -->
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-12 mb-3 mb-lg-0">
+                <h3 class="text-center">The charity</h3>
+                <a href="https://www.directrelief.org/" target="_blank">Direct Relief</a> works in the U.S. and internationally to equip doctors and nurses with life-saving medical resources. The organization operates in 80+ countries and all 50 U.S. states, from providing wildfire aid in California to distributing COVID-19 vaccines worldwide.
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-center">The event</h3>
+                <p>We're planning two livestreams (one on December 18, one on December 19) with journalists, YouTubers, leakers, and other tech enthusiasts you might already know. Expect games, chats with viewers, and much more! We're using the <a href="https://tiltify.com/direct-relief" target="_blank">Tiltify</a> platform for donations, so the money goes directly to Direct Relief.</p>
+            </div>
+        </div>
+        <!-- Calendar card -->
+        <div class="card mt-5" id="schedule">
+            <div class="card-body">
+                <h5 class="card-title">Techathon event schedule</h5>
+            </div>
+            <div class="ratio ratio-21x9">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FDublin&amp;src=8o4aerj032qe574bnottfii8ms@group.calendar.google.com&amp;color=%23E4C441&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;mode=AGENDA" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <!-- Team info -->
+        <div class="row mt-5 mt-5" id="team">
+            <div class="col-12 text-center">
+                <h3>Meet the Techathon team</h3>
+            </div>
+            <!-- Person 1 -->
+            <div class="col-sm-6 col-md-4 mt-5">
+                <h4 class="w-100 text-center">Adam Conway</h4>
+                <a href="https://twitter.com/AdamConwayIE" target="_blank" class="col-12 w-100 text-center mt-3" style="display: block;">
+                    <img src="img/adam.jpg" alt="" class="circle">
+                </a>
+                <div class="mt-3">Adam is a senior editor and video producer at <a href="https://www.xda-developers.com/" target="_blank">XDA Developers</a>, and the Editor-in-Chief of <a href="https://www.irishtech.ie" target="_blank">IrishTech</a>.</div>
+            </div>
+            <!-- Person 2 -->
+            <div class="col-sm-6 col-md-4 mt-5">
+                <h4 class="w-100 text-center">Corbin Davenport</h4>
+                <a href="https://corbin.io" target="_blank" class="col-12 w-100 text-center mt-3" style="display: block;">
+                    <img src="img/corbin.jpg" alt="" class="circle">
+                </a>
+                <div class="mt-3">Corbin is a senior news writer at <a href="https://www.xda-developers.com/" target="_blank">XDA Developers</a>, and previously worked for <a href="https://www.androidpolice.com/" target="_blank">Android Police</a> and <a href="https://https://www.pcgamer.com/">PC Gamer</a>.</div>
+            </div>
+            <!-- Person 3 -->
+            <div class="col-sm-6 col-md-4 mt-5">
+                <h4 class="w-100 text-center">Jules Wang</h4>
+                <a href="https://twitter.com/PointJules" target="_blank" class="col-12 w-100 text-center mt-3" style="display: block;">
+                    <img src="img/jules.jpg" alt="" class="circle">
+                </a>
+                <div class="mt-3">Jules is a journalist at <a href="https://www.androidpolice.com/" target="_blank">Android Police</a>, and formerly worked at <a href="https://pocketnow.com/">PocketNow</a>.</div>
+            </div>
+            <!-- Person 4 -->
+            <div class="col-sm-6 mt-5">
+                <h4 class="w-100 text-center">Zachary Wander</h4>
+                <a href="https://zwander.dev/" target="_blank" class="col-12 w-100 text-center mt-3" style="display: block;">
+                    <img src="img/zach.jpg" alt="" class="circle">
+                </a>
+                <div class="mt-3">Zach is a journalist at <a href="https://www.xda-developers.com/" target="_blank">XDA Developers</a> and an independent software developer.</div>
+            </div>
+            <!-- Person 5 -->
+            <div class="col-sm-6 mt-5">
+                <h4 class="w-100 text-center">Nils Ahrensmeier</h4>
+                <a href="https://twitter.com/NilsAhrDE" target="_blank" class="col-12 w-100 text-center mt-3" style="display: block;">
+                    <img src="img/nils.jpg" alt="" class="circle">
+                </a>
+                <div class="mt-3">Nils is a writer for <a href="https://www.techniknews.net/" target="_blank">TechnikNewsNET</a> and <a href="https://www.mobilegeeks.de/" target="_blank">Mobilegeeks.de</a>.</div>
+            </div>
+        </div>
+        <!-- Contact card -->
+        <div class="card mt-5" id="contact">
+            <div class="card-body">
+                <h5 class="card-title">Contact us</h5>
+                <p>The best way to reach out to us is via email. You can send us a message at <a href="mailto:admin@techathon.live">admin @ techathon.live</a>.</p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="text-muted text-center mt-5">
+            Techathon is not affiliated with Direct Relief or any of the publications metioned on this page.
+        </div>
     </div>
 
-    <!-- Three columns -->
-    <div class="section" style="padding-top: 0;">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h5 class="center">The charity</h5>
-            <p class="light"><a href="https://www.directrelief.org/" target="_blank">Direct Relief</a> works in the U.S. and internationally to equip doctors and nurses with life-saving medical resources. The organization operates in 80+ countries and all 50 U.S. states, from providing wildfire aid in California to distributing COVID-19 vaccines worldwide.</p>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h5 class="center">The event</h5>
-            <p class="light">We're planning two livestreams (one on December 18, one on December 19) with journalists, YouTubers, leakers, and other tech enthusiasts you might already know. Expect games, chats with viewers, and much more! We're using the <a href="https://tiltify.com/direct-relief" target="_blank">Tiltify</a> platform for donations, so the money goes directly to Direct Relief.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Calendar -->
-    <div class="section" id="calendar">
-      <div class="card" style="background: #e3e9ff">
-        <h5 style="padding: 8px 20px">Schedule (Ireland Time/GMT+0)</h5>
-        <div class="video-container">
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FDublin&amp;src=8o4aerj032qe574bnottfii8ms@group.calendar.google.com&amp;color=%23E4C441&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;mode=AGENDA" style="border-width:0" frameborder="0" scrolling="no"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- List of people -->
-
-    <div class="section" id="about">
-      <div class="card techathon-team-card">
-        <div class="card-content" style="padding-bottom: 5px;">
-          <span class="card-title">Meet the team</span>
-          <p class="light">Techathon is being put together by a group of tech journalists, with the goal of bringing together tech fans around the world to participate and give to Doctors Without Borders.</p>
-        </div>
-        <ul class="collection">
-          <li class="collection-item avatar">
-            <img src="img/adam.jpg" alt="" class="circle">
-            <span class="title"><a href="https://twitter.com/AdamConwayIE" target="_blank">Adam Conway</a></span>
-            <p>Adam is a senior editor and video producer at <a href="https://www.xda-developers.com/" target="_blank">XDA Developers</a>, and the Editor-in-Chief of <a href="https://www.irishtech.ie" target="_blank">IrishTech</a>.</p>
-          </li>
-          <li class="collection-item avatar">
-            <img src="img/corbin.jpg" alt="" class="circle">
-            <span class="title"><a href="https://corbin.io" target="_blank">Corbin Davenport</a></span>
-            <p>Corbin is a senior news writer at <a href="https://www.xda-developers.com/" target="_blank">XDA Developers</a>, and previously worked for <a href="https://www.androidpolice.com/" target="_blank">Android Police</a> and <a href="https://https://www.pcgamer.com/">PC Gamer</a>.</p>
-          </li>
-          <li class="collection-item avatar">
-            <img src="img/jules.jpg" alt="" class="circle">
-            <span class="title"><a href="https://twitter.com/PointJules" target="_blank">Jules Wang</a></span>
-            <p>Jules is a journalist at <a href="https://www.androidpolice.com/" target="_blank">Android Police</a>, and formerly worked at <a href="https://pocketnow.com/">PocketNow</a>.</p>
-          </li>
-          <li class="collection-item avatar">
-            <img src="img/zach.jpg" alt="" class="circle">
-            <span class="title"><a href="https://zwander.dev/" target="_blank">Zachary Wander</a></span>
-            <p>Zach is a journalist at <a href="https://www.xda-developers.com/" target="_blank">XDA Developers</a> and an independent software developer.</p>
-          </li>
-          <li class="collection-item avatar">
-            <img src="img/nils.jpg" alt="" class="circle">
-            <span class="title"><a href="https://twitter.com/NilsAhrDE" target="_blank">Nils Ahrensmeier</a></span>
-            <p>Nils is an editor for <a href="https://www.techniknews.net/" target="_blank">TechnikNewsNET</a>.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Contact card -->
-    <div class="section" id="contact">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title">Contact us</span>
-          <p>The best way to reach out to us is via email. You can send us a message at <a href="mailto:admin@techathon.live">admin @ techathon.live</a>.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Extra spacing so FAB doesn't cut off any text -->
-    <br><br>
-
-  </div>
-
-  <div class="floating-donate-btn fixed-action-btn">
-    <a class="btn-floating btn-large green" href="/donate/" target="_blank" title="Donate">
-      <i class="large material-icons">attach_money</i>
-    </a>
-  </div>
-
-  <!-- Footer -->
-  <div class="page-footer techathon-color">
-    <div class="row" style="margin-bottom: 0; padding-bottom: 20px;">
-      <div class="col s12">
-        Techathon is not affiliated with Direct Relief or any of the publications metioned on this page.
-      </div>
-    </div>
-  </div>
-
-  <!--  Scripts-->
-  <script src="/js/materialize.min.js"></script>
-  <script src="/js/techathon.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
