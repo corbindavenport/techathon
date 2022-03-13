@@ -1,66 +1,38 @@
-.btn-block {
-    width: 100%;
+.techathon {
+    background: #ff412c;
 }
 
-.nav-wrapper .brand-logo img {
-    height: 50px;
-    margin-top: 6px;
+.techathon.btn:hover {
+    background: #ff6855;
 }
 
-.techathon-team-card .collection, .techathon-team-card .collection-item {
-    border: 0;
+.techathon-yellow {
+    border-color: #ffed71;
+    color: #ffed71;
 }
 
-.techathon-team-card .title a {
-    color: initial;
+.techathon-yellow:hover {
+    border-color: #000;
+    background: #ffed71;
+    color: #000;
 }
 
-.techathon-main-buttons .btn-block {
-    margin-bottom: 8px;
+.navbar-brand img {
+    height: 32px;
+    margin-top: -8px;
 }
 
-.techathon-color {
-    background: #ff634f;
+#team img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
 }
 
-/* Tablet, desktop, and large desktop */
-@media (min-width: 992px) {
-    .floating-donate-btn {
-        display: none;
-    }
+iframe {
+    border-radius: .3rem !important;
 }
 
-@media only screen and (min-width: 600px) {
-
-    .container {
-        width: calc(100% - 40px);
-    }
-
-    .brand-logo {
-        margin-left: 10px;
-    }
-
-    .nav-donate-btn {
-        display: inline-block;
-    }
-
+/* Fix for anchor links with fixed nav bar */
+html {
+    scroll-padding-top: 80px;
 }
-
-/* Mobile only */
-@media only screen and (max-width: 600px) {
-
-    .embed-container {
-        margin-left: calc(-5% - 1rem);
-        margin-right: calc(-5% - 1rem);
-        margin-top: -1em;
-    }
-
-    .nav-wrapper .brand-logo img {
-        height: 43px;
-    }
-
-    .nav-donate-btn {
-        display: none;
-    }
-
-}   
