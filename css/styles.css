@@ -1,31 +1,14 @@
-.techathon {
-    background: #ff412c;
-}
-
-.techathon.btn:hover {
-    background: #ff6855;
-}
-
-.techathon-yellow {
-    border-color: #ffed71;
-    color: #ffed71;
-}
-
-.techathon-yellow:hover {
-    border-color: #000;
-    background: #ffed71;
-    color: #000;
-}
-
 .navbar-brand img {
     height: 32px;
     margin-top: -8px;
 }
 
-#team img {
+.team-list img {
+    float: left;
     width: 75px;
-    height: 75px;
-    border-radius: 50%;
+    height: auto;
+    border-radius: .3rem;
+    margin-right: 20px;
 }
 
 iframe {
