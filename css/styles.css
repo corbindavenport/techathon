@@ -1,6 +1,6 @@
-.navbar-brand img {
-    height: 32px;
-    margin-top: -8px;
+/* Fix for navbar covering up page content */
+body {
+    padding-top: 56px;
 }
 
 .team-list img {
@@ -11,11 +11,7 @@
     margin-right: 20px;
 }
 
-iframe {
-    border-radius: .3rem !important;
-}
-
 /* Fix for anchor links with fixed nav bar */
 html {
-    scroll-padding-top: 80px;
+    scroll-padding-top: 56px;
 }
