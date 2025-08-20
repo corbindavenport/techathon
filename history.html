@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -16,26 +16,32 @@
     <meta name="keywords" content="techathon, tech, livestream, charity, twitch">
     <meta name="language" content="English">
     <!-- Open Graph card -->
+    <meta property="og:site_name" content="Techathon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Techathon - History">
+    <meta property="og:description" content="Techathon has raised over $3,500 for charity to date.">
     <meta property="og:url" content="https://techathon.live/history.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Techathon History" />
-    <meta property="og:description" content="Previous Techathon livestream events, raising over $3,500 for charity to date." />
-    <meta property="og:image" content="https://techathon.live/img/icon_x256.png" />
-    <meta property="og:image:width" content="256" />
-    <meta property="og:image:height" content="256" />
-    <meta name="og:image:alt" content="Techathon icon" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://techathon.live/img/social-card.png">
+    <meta name="og:image:alt" content="Techathon artwork" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techathon - History">
+    <meta name="twitter:description" content="Techathon has raised over $3,500 for charity to date.">
+    <meta name="twitter:url" content="https://techathon.live/history.html">
+    <meta name="twitter:image" content="https://techathon.live/img/social-card.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="/custom.css" rel="stylesheet">
+    <script src="dark.js"></script>
 </head>
 
-<body>
+<body class="bg-body-tertiary">
 
     <!-- Navbar -->
 
-    <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary shadow">
+    <nav class="navbar fixed-top navbar-expand-sm" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Techathon</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,24 +72,22 @@
 
     <div class="container mb-5">
         <!-- Video/main description -->
-        <div class="row">
+        <div class="row my-3 my-lg-5">
             <!-- Description -->
-            <div class="mt-5 col-lg-6 col-md-12 display-4 text-center">
-                <div class="mt-0 mt-lg-3 mt-xl-5">
+            <div class="col-lg-6 col-md-12 display-4 d-flex align-items-center mb-3">
                     We've raised over $3,500 for charity to date.
-                </div>
             </div>
             <!-- Video -->
-            <div class="mt-5 col-lg-6 col-md-12 video-container">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://player.twitch.tv/?video=1237670954&time=1h10m50s&parent=techathon.live&autoplay=true" frameborder="0" allowfullscreen></iframe>
+            <div class="col-lg-6 col-md-12 video-container mb-3">
+                <div class="ratio ratio-16x9 bg-secondary rounded shadow">
+                    <iframe src="https://player.twitch.tv/?video=1237670954&time=1h10m50s&parent=techathon.live&autoplay=true" frameborder="0" allowfullscreen class="rounded"></iframe>
                 </div>
             </div>
         </div>
         <!-- August 2022 -->
-        <div class="row mt-5">
+        <div class="row">
             <div class="col-12 col-md-4 mt-2">
-                <img src="img/techathon-2022.jpg" class="w-100" style="border-radius: .25rem;">
+                <img src="img/techathon-2022.jpg" class="w-100 rounded">
             </div>
             <div class="col-12 col-md-8 mt-2">
                 <h1>August 2022</h1>
@@ -105,7 +109,7 @@
         <!-- December 2021 -->
         <div class="row mt-5">
             <div class="col-12 col-md-4 mt-2">
-                <img src="img/techathon-2021.jpg" class="w-100" style="border-radius: .25rem;">
+                <img src="img/techathon-2021.jpg" class="w-100 rounded">
             </div>
             <div class="col-12 col-md-8 mt-2">
                 <h1>December 2021</h1>
@@ -127,7 +131,7 @@
         <!-- December 2020 -->
         <div class="row mt-5">
             <div class="col-12 col-md-4 mt-2">
-                <img src="img/techathon-2020.jpg" class="w-100" style="border-radius: .25rem;">
+                <img src="img/techathon-2020.jpg" class="w-100 rounded">
             </div>
             <div class="col-12 col-md-8 mt-2">
                 <h1>December 2020</h1>

@@ -1,6 +1,48 @@
+@font-face {
+    font-family: 'SF Eccentric Opus Bold Oblique';
+    src: URL('/img/customfont.ttf') format('truetype');
+}
+
 /* Fix for navbar covering up page content */
-body {
+body:not(body[data-page="home"]) {
     padding-top: 56px;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav a,
+.display-6,
+.display-5,
+.display-4,
+.display-3,
+.display-2,
+.display-1 {
+    font-family: "SF Eccentric Opus Bold Oblique", "Trebuchet MS", Helvetica, sans-serif;
+    text-transform: lowercase;
+}
+
+.navbar[data-bs-theme="dark"] {
+    background-color: #374b3f;
+    background-color: rgba(55, 75, 63, .8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.container-techathon {
+    color: #233028;
+    padding-top: 56px;
+    background: #A7FFAC;
+    background: linear-gradient(180deg, #A7FFAC, #E9FF80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: image-set("/img/background.webp" type("image/webp"),
+            "/img/background.jpg" type("image/jpeg"));
+}
+
+html[data-bs-theme="dark"] .container-techathon {
+    color: #caff94;
+    background-image: image-set("/img/background-dark.webp" type("image/webp"),
+            "/img/background-dark.jpg" type("image/jpeg"));
 }
 
 .team-list img {
