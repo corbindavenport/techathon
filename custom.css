@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'SF Eccentric Opus Bold Oblique';
-    src: URL('/img/customfont.ttf') format('truetype');
+    src: URL('/media/customfont.ttf') format('truetype');
 }
 
 /* Fix for navbar covering up page content */
@@ -35,14 +35,14 @@ body:not(body[data-page="home"]) {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: image-set("/img/background.webp" type("image/webp"),
-            "/img/background.jpg" type("image/jpeg"));
+    background-image: image-set("/media/background.webp" type("image/webp"),
+            "/media/background.jpg" type("image/jpeg"));
 }
 
 html[data-bs-theme="dark"] .container-techathon {
     color: #caff94;
-    background-image: image-set("/img/background-dark.webp" type("image/webp"),
-            "/img/background-dark.jpg" type("image/jpeg"));
+    background-image: image-set("/media/background-dark.webp" type("image/webp"),
+            "/media/background-dark.jpg" type("image/jpeg"));
 }
 
 .team-list img {
