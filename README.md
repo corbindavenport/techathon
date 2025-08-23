@@ -4,6 +4,10 @@ This is the website for Techathon, using the [Bootstrap framework](https://getbo
 
 **Making changes to the `main` branch of this repository will update the [live website](https://techathon.live).**
 
+To change the donate link, update the `http-equiv="Refresh"` meta tag in `/donate/index.html`.
+
+## Building images
+
 The header background image is served in WebP or JPEG format for lower data usage. Given a `background.png` image in the media directory and [imagemagick](https://formulae.brew.sh/formula/imagemagick) installed, the WebP and JPEG versions can be made like this:
 
 ```

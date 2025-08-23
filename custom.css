@@ -1,23 +1,6 @@
-@font-face {
-    font-family: 'SF Eccentric Opus Bold Oblique';
-    src: URL('/media/customfont.ttf') format('truetype');
-}
-
 /* Fix for navbar covering up page content */
 body:not(body[data-page="home"]) {
     padding-top: 56px;
-}
-
-.navbar .navbar-brand,
-.navbar .navbar-nav a,
-.display-6,
-.display-5,
-.display-4,
-.display-3,
-.display-2,
-.display-1 {
-    font-family: "SF Eccentric Opus Bold Oblique", "Trebuchet MS", Helvetica, sans-serif;
-    text-transform: lowercase;
 }
 
 .navbar[data-bs-theme="dark"] {
