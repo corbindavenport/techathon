@@ -28,14 +28,6 @@ html[data-bs-theme="dark"] .container-techathon {
             "/media/background-dark.jpg" type("image/jpeg"));
 }
 
-.team-list img {
-    float: left;
-    width: 75px;
-    height: auto;
-    border-radius: .3rem;
-    margin-right: 20px;
-}
-
 /* Fix for anchor links with fixed nav bar */
 html {
     scroll-padding-top: 56px;
